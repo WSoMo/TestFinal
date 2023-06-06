@@ -14,7 +14,7 @@ const  RouteComponent = ()=>{
 
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename='/TestFinal'>
                 <HeaderComponent />
                     <Routes>
                         <Route path="/" element={<HomeContainer />} />
