@@ -11,7 +11,7 @@ const HeaderComponent = ()=>{
         {name:'Tv Show', link:'/series'},
         {name:'Search', link:'/search'},
         {name:'Popular', link:'/contact'},
-        {name: 'User', link: '/about'}
+        {name: 'User', link: '/signin'}
        
     ]
 
