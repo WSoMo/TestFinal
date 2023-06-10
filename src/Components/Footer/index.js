@@ -25,7 +25,7 @@ const FooterComponent = () => {
                   <li>
                     <img
                       className="logo"
-                      src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+                      src="https://png2.cleanpng.com/sh/f27780634d78d1db51c2cf676088c8aa/L0KzQYq3VsIzN6Z8kJH0aYP2gLBuTgNidl5vhAVuLYPrccPyk71qa5YygNHsa3X8Pb32hB8ue6F0iuZ8LYPkfn7xjCNmNaRteeR0cz3pgrbsTfhlNahmhN55YYDogsS0if1ib5Z4RdRqY3vqgrF8TcVlOJZrT9UCYUGzRoGBTsE0O2g4TKkEMUW5QYO9UsAzO2c6Uag3cH7q/kisspng-san-jose-sharks-ice-hockey-logo-sports-san-jose-sharks-free-hd-wallpapers-images-backgrou-5d0ef7c7a10608.1337347915612620236596.png"
                       alt=""
                     />
                   </li>
