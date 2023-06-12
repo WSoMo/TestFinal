@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { auth } from '../../../../firebase';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { browserSessionPersistence, setPersistence, signInWithEmailAndPassword } from 'firebase/auth';
 import firebase from 'firebase/compat/app';
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import 'firebase/compat/auth';
+import React, { useState } from 'react';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import { auth } from '../../../../firebase';
 import './index.css';
+
 
 const SignIn = () => {
     const [email, setEmail] = useState('');
@@ -20,6 +21,21 @@ const SignIn = () => {
             firebase.auth.FacebookAuthProvider.PROVIDER_ID
         ]
     };
+
+    setPersistence(auth, browserSessionPersistence)
+        .then(() => {
+            // Existing and future Auth states are now persisted in the current
+            // session only. Closing the window would clear any existing state even
+            // if a user forgets to sign out.
+            // ...
+            // New sign-in will be persisted with session persistence.
+            return signInWithEmailAndPassword(auth, email, password);
+        })
+        .catch((error) => {
+            // Handle Errors here.
+            const errorCode = error.code;
+            const errorMessage = error.message;
+        });
 
     const signIn = (e) => {
         e.preventDefault();

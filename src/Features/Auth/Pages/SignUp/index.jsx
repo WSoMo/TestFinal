@@ -1,12 +1,26 @@
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import firebase from 'firebase/compat/app';
 import React, { useState } from 'react';
 import { auth } from '../../../../firebase';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
 import AuthDetails from '../../Components/AuthDetails';
 import './index.css';
 
 const SignUp = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    // var config = {
+    //     apiKey: "apiKey",
+    //     authDomain: "projectId.firebaseapp.com",
+    //     databaseURL: "https://databaseName.firebaseio.com"
+    // };
+    // var secondaryApp = firebase.initializeApp(config, "Secondary");
+
+    // secondaryApp.auth().createUserWithEmailAndPassword(email, password).then(function (firebaseUser) {
+    //     console.log("User " + firebaseUser.uid + " created successfully!");
+    //     secondaryApp.auth().signOut();
+    // });
+
 
     const signUp = (e) => {
         e.preventDefault();
