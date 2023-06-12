@@ -1,0 +1,157 @@
+.page {
+    max-width: 1200px;
+    padding-top: 130px;
+    padding-left: 100px;
+    box-sizing: border-box; 
+    padding-bottom: 50px;
+  }
+  
+  .page-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .popular-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  .person-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 350px;
+    color: black;
+    width: 235px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+  
+  
+  }
+
+  
+  .person-image {
+    width: 235px;
+    height: 235px;
+    object-fit: cover;
+  }
+  
+  .person-info {
+    font-size: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+  
+  .person-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .person-known-for {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .person-movies-list {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    list-style: disc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .person-movie {
+    margin-bottom: 5px;
+
+    
+  }
+ul li{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.pagination a,
+.pagination button {
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+}
+
+.pagination a:first-child,
+.pagination button:first-child {
+  margin-left: 0;
+}
+
+.pagination a:last-child,
+.pagination button:last-child {
+  margin-right: 0;
+}
+
+.pagination a.active,
+.pagination button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.pagination button {
+   background-color: #333;
+   color: #fff;
+   cursor: pointer;
+}
+
+.pagination button:hover,
+.pagination a:hover {
+  opacity: 0.8;
+}
+
+.pagination .dots {
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 540px) {
+  .pagination {
+    flex-wrap: wrap;
+  }
+
+  .pagination a,
+  .pagination button,
+  .pagination .dots {
+    margin: 5px;
+  }
+}
+button:hover {
+  background: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+a{
+  color: black !important;
+}
+
+
+  
