@@ -24,7 +24,7 @@ const RouteComponent = () => {
                     <Route path="/series" element={<TvSeriesContainer />} />
                     <Route path="/search" element={<SearchContainer />} />
                     <Route path="/details/:movieid/:mediatype" element={<DetailsContainer />} />
-                    <Route path="/contact" element={<ContactContainer />} />
+                    <Route path="/contact" element={<AboutContainer />} />
                     <Route path='/signin' element={<SignIn />} />
                     <Route path='/signup' element={<SignUp />} />
 
