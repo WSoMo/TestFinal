@@ -1,12 +1,13 @@
 .page {
-  max-width: 1200px;
-  padding-top: 130px;
-  padding-left: 100px;
+  max-width: 100%;
   box-sizing: border-box;
-  padding-bottom: 50px;
+  padding: 100px;
+
+
 }
 
 .page-title {
+
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -135,17 +136,31 @@ ul li {
   color: #333;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1024px) {
+  .page{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .popular-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+ 
   .pagination {
     flex-wrap: wrap;
   }
-
   .pagination a,
   .pagination button,
   .pagination .dots {
     margin: 5px;
   }
 }
+
 
 button:hover {
   background: #333;
